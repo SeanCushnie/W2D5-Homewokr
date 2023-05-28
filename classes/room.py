@@ -20,8 +20,9 @@ class Room:
             self.guestList.remove(guest)
     #Jukebox function. Guest can add a song for £10
     def add_song_to_playlist(self, song, guest):
+        amount = 10
         self.playList.append(song)
-        guest.reduce_wallet(10)
+        guest.reduce_wallet(amount)
     
     def check_if_favourite_song(self, song):
         for guest in self.guestList:
