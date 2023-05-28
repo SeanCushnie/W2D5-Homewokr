@@ -1,6 +1,7 @@
 from classes.guest import *
 from classes.song import *
 from classes.guest import *
+from classes.caraoke import *
 class Room:
     def __init__(self, name, fee, capacity, guestList):
         self.name = name
