@@ -14,5 +14,5 @@ class Guest:
     def can_afford_item(self, item):
         return True if self.wallet >= item.price else False
     
-    def buy_drink(self,drink):
+    def buy_drink(self, drink):
         self.reduce_wallet(drink.price)
